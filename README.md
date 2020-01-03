@@ -12,14 +12,16 @@ This Dockerfile has an **Ubuntu** base image with the **Julia** programming lang
 1. git pull https://github.com/jamilgafur/Julia_dev.git
 2. cd Julia_dev
 3. docker build -t name1 .
-4. docker run -rm -ti name1
+4. docker run --rm -ti name1
 > If you are running on a mac run the command:
+
 >  docker run -e OPENBLAS_CORETYPE=haswell -rm -ti name1
 
 ### Build from docker
 1. docker pull jamilgafur/julia_dev:latest
-2. docker run -ti -rm jamilgafur/julia_dev
-> if you are running on a mac run the command
+2. docker run -ti --rm jamilgafur/julia_dev
+> if you are running on a mac run the command:
+
 > docker run -e OPENBLAS_CORETYPE=haswell -rm -ti jamilgafur/julia_dev
 
 ## Example Testcase
